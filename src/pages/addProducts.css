@@ -1,0 +1,72 @@
+.addProd {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.formContainer {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 45%;
+    display: flex;
+    box-shadow: 0px 0px 5px gray;
+    gap: 30px;
+    flex-direction: column;
+    transition: .3s all ease;
+}
+
+.formContainer:focus-within {
+    box-shadow: 0px 0px 10px gray;
+}
+
+.formContainer h2 {
+    text-align: center;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inputBox label {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.inputBox input,
+textarea {
+    width: 100%;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    border-radius: 8px;
+    border: 2px solid #f9b047;
+    background-color: #f9b047;
+    color: #1d1d1d;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+form button:hover {
+    background-color: #f9af47a7;
+
+}
+@media screen and (max-width:751px) {
+    .formContainer{
+        width: 90%;
+    }
+}

@@ -1,0 +1,168 @@
+.home {
+    min-height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(150deg, #f9b047, #be711f); */
+}
+
+.home .hero {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.hero .stroked {
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+}
+
+.hero .stroked h2 {
+    font-size: 14rem;
+    -webkit-text-stroke: 4px #1d1d1d;
+    color: transparent;
+
+}
+
+.hero .left {
+    width: 20%;
+    background: url(../../public/herobg.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: 50;
+}
+
+.stroked .mainDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stroked .content {
+    margin-top: -15px;
+    width: 38vw;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.content h2 {
+    letter-spacing: 3px;
+}
+
+
+.hero button {
+    border: none;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    padding: 8px;
+    border: 2px solid #1d1d1d;
+    cursor: pointer;
+    transition: .3s all ease;
+    width: fit-content;
+}
+
+.hero button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.hero2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero2 .left {
+    flex: 1;
+    width: 30%;
+    height: 100vh;
+    /* background: url(../../public/hero2.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat; */
+}
+.hero2 .left .image {
+    width: 100%;
+    height: 100vh;
+    background: url(../../public/hero2.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.hero2 .right {
+    color: #f9b047;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero2 .right p {
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.hero2 .right h3 {
+    font-size: 6rem;
+}
+
+@media screen and (max-width:751px) {
+    .home .hero {
+        flex-direction: column;
+    }
+
+    .hero .stroked h2 {
+        font-size: 8rem;
+    }
+
+    .stroked .mainDiv {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero .left {
+        width: 100vw;
+        align-items: center;
+    }
+
+    .mainDiv .content {
+        width: 100%;
+    }
+
+    .hero .stroked {
+        margin-top: -60px;
+    }
+
+    .hero2{
+        flex-direction: column;
+        width: 100%;
+        /* padding: 1rem; */
+        justify-content: center;
+    }
+    .hero2 .left{
+        width: 100%;
+        /* height: 40vh; */
+        /* background-position-y: bottom; */
+    }
+    .hero2 .left .image{
+        height: 50vh;
+    }
+    .hero2 .right{
+        padding: 2rem;
+        margin-top: 15px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .hero2 .right h3{
+        font-size: 3rem;
+    }
+}
